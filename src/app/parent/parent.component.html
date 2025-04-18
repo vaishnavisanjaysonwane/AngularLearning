@@ -1,0 +1,19 @@
+<p>parent works!</p>
+<ul>
+    <li *ngFor="let fruit of fruits; let i = index">
+        {{i}} - {{fruit}}</li>
+</ul>
+
+<p *ngIf="isTrue">Login Successful</p>
+<p *ngIf="!isTrue">Login Unsuccessful</p>
+
+<!-- 3 -->
+<app-child [name]="userName" (messageEvent)="receiveMessage($event)"></app-child>
+<h1 style="color: red;">{{message}}</h1>
+<!-- <h1><p>Hey this is my name: </p>{{name}}</h1> -->
+
+
+<!-- <app-child (messageEvent)="receiveMessage($event)"></app-child>
+<p>{{ message }}</p> -->
+
+<!-- <app-second></app-second> -->
