@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path : "dashboard", component: DashboardComponent
+  },
+  {
+    path : "pipes" , component: PipesComponent
   }
 ];
 

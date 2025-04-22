@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>Date Pipes Example</h1>
+    <!-- <p>normal : {{todayDate | date:'normal'}}</p>
+    <p>medium : {{todayDate | date:'medium'}}</p> -->
+    <p>long : {{todayDate | date:'long'}}</p>
+    <p>short : {{todayDate | date:'short'}}</p>
+
+    <h1>Currency Pipes Example</h1>
+    <p>Korean  {{number | currency: 'KRW' }}</p>
+
+    <h1>Upper-Lower pipes Example</h1>
+    <p>UpperCase : {{toupper | uppercase}}</p>
+    <p>LowerCase : {{toupper | lowercase}}</p>
+
+    <h1>Decimal Pipes Example</h1>
+    <p>{{number}}</p>
+    <p>{{number | number:'2.2-4'}}</p>
+
+    <h1>Json Pipes Example</h1>
+    <p>person : {{person | json}}</p>
+    <p>people : {{people | json}}</p>
+
+    <h1>Slice</h1>
+    <p>{{toupper}} : from(0-2) : {{toupper | slice:0:2}}</p>
+    <br><br>
+
+    <h1>KeyValue Example</h1>
+    <ul *ngFor="let p of person | keyvalue">
+        {{p.key}} - {{p.value}}
+    </ul>
+
+    <h1>SelectPipe Example</h1>
+    <h4>{{ gender | i18nSelect: inviteMap }}</h4>
+
+    <button (click)="changeGender('male')">Male</button>
+    <button (click)="changeGender('female')">Female</button>
+    <br><br><br><br><br>
+</div>
