@@ -13,6 +13,7 @@ import { ChildComponent } from './parent/child/child.component';
 import { BindingSessionComponent } from './binding-session/binding-session.component';
 import { FormsModule } from '@angular/forms';
 import { PipesComponent } from './pipes/pipes.component';
+import { AdditionPipe, PipeExamplePipe } from './pipeexample/pipe-example.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,8 @@ import { PipesComponent } from './pipes/pipes.component';
     ChildComponent,
     BindingSessionComponent,
     PipesComponent,
+    PipeExamplePipe,
+    AdditionPipe
   ],
   imports: [
     BrowserModule,
