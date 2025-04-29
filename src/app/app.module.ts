@@ -19,7 +19,6 @@ import { AdditionPipe, PipeExamplePipe } from './pipeexample/pipe-example.pipe';
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent,
     DashboardComponent,
     FirstChildComponent,
     HeaderComponent,

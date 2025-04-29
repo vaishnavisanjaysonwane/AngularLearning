@@ -10,7 +10,12 @@ const routes: Routes = [
       path : "first", component: FirstComponent
   },
   {
-    path : "second", component: SecondComponent
+    path : "second", 
+    loadComponent: ()=> import("./second/second.component").then(m=>m.SecondComponent)
+  },
+  {
+    path : "company", 
+    loadComponent: ()=> import("./company/company.component").then(m=>m.CompanyComponent)
   },
   {
     path : "dashboard", component: DashboardComponent
